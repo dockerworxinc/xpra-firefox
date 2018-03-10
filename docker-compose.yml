@@ -9,11 +9,11 @@ services:
       MODE: "tcp"
       XPRA_HTML: "yes"
       DISPLAY: ":14"
-    port:
+    ports:
       - "10000:10000"
   
   firefox:
-    image: sassman/debian-firefox
+    image: sassmann/debian-firefox
     container_name: firefox
     environment:
       DISPLAY: ":14"
