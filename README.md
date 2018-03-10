@@ -24,3 +24,15 @@ sassmann/debian-firefox firefox
 ```
 curl http://localhost:10000/index.html?encoding=png&password=111
 ```
+
+##
+
+```
+$ docker ps
+CONTAINER ID        IMAGE                     COMMAND                  CREATED             STATUS   
+           PORTS                              NAMES
+2d313d89ce10        sassmann/debian-firefox   "firefox"                2 seconds ago       Up 1 seco
+nd                                            fire
+f1940aeabb09        jare/x11-bridge           "/usr/local/bin/run …"   About an hour ago   Up About 
+an hour    22/tcp, 0.0.0.0:10000->10000/tcp   x11-bridge
+```
