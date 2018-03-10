@@ -1,0 +1,21 @@
+version: '2'
+
+services:
+
+  x11-bridge:
+    image: jare/x11-bridge
+    container_name: x11-bridge
+    environment:
+      MODE: "tcp"
+      XPRA_HTML: "yes"
+      DISPLAY: ":14"
+    port:
+      - "10000:10000"
+  
+  firefox:
+    image: sassman/debian-firefox
+    container_name: firefox
+    environment:
+      DISPLAY: ":14"
+    volumes_from:
+      - x11-bridge:rw
