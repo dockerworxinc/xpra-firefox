@@ -19,3 +19,4 @@ services:
       DISPLAY: ":14"
     volumes_from:
       - x11-bridge:rw
+    command: /bin/bash -c "/usr/bin/firefox"
