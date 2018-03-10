@@ -9,6 +9,7 @@ services:
       MODE: "tcp"
       XPRA_HTML: "yes"
       DISPLAY: ":14"
+      XPRA_PASSWORD: 111
     ports:
       - "10000:10000"
   
