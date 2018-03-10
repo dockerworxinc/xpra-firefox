@@ -14,10 +14,10 @@ services:
       - "10000:10000"
   
   firefox:
-    image: sassmann/debian-firefox
+    image: fedora/firefox
     container_name: firefox
     environment:
       DISPLAY: ":14"
     volumes_from:
-      - x11-bridge:rw
-    command: /bin/bash -c "/usr/bin/firefox"
+      - x11-bridge
+    
