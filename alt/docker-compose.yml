@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+
+  x11-xpra:
+    image: reto/x11-xpra
+    container_name: x11-xpra
+    ports:
+      - "2020:20"
+    
+  
+  firefox:
+    image: dockerworxinc/firefox-docker
+    container_name: firefox
+    
+      
+      
+  
+  
