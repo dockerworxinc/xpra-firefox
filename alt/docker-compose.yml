@@ -10,7 +10,7 @@ services:
     
   
   firefox:
-    image: dockerworxinc/firefox-docker
+    image: dockerworxinc/fmyfirefox
     container_name: firefox
     
       
