@@ -17,8 +17,7 @@ RUN mkdir /home/user/.ssh/
 
 VOLUME /home/user
 
-USER firefox
-ENV HOME /home/firefox
+
 
 CMD []
 ENTRYPOINT ["/usr/bin/firefox"]
