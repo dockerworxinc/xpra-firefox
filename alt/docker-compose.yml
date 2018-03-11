@@ -7,12 +7,17 @@ services:
     container_name: x11-xpra
     ports:
       - "2020:20"
+    volumes:
+      # copy ssh public key
+      - ~/.ssh/id_rsa.pub:/home/user/.ssh/authorized_keys
     
   
   firefox:
     image: dockerworxinc/fmyfirefox
     container_name: firefox
-    
+    volumes:
+      # copy ssh public key
+      - ~/.ssh/id_rsa.pub:/home/user/.ssh/authorized_keys
       
       
   
